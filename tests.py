@@ -1,9 +1,9 @@
 from unittest import TestCase
-from extra_challenge.calculator import ICalculator, IAdvancedCalculator, Calculator, AdvancedCalculator
+from calculator import ICalculator, IAdvancedCalculator, Calculator, AdvancedCalculator
+# To run in commandline without IDE: python -m unittest
 
 
 class CalculatorTestCase(TestCase):
-
     def _test_ICalculator(self, calc: ICalculator):
         """
         calc: ICalculator is a type hint. -> 'Hey, Python, calc should implement ICalculator, k?'
