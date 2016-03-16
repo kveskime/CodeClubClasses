@@ -1,4 +1,25 @@
-# How to make Interface
+# What is an Interface?
+
+"""
+Interfaces make it possible to say:
+    Hey, this thing has these methods, I don't know how it is implemented, but it is there!
+"""
+
+
+class IRunnable:
+    """Interface for things that are Runnable - they have the run() method!"""
+
+    def run(self):
+        raise NotImplementedError  # The thing that implements IRunnable has to implement run itself.
+
+"""
+class IRunnable:                    ->  class MyClass(IRunnable):
+
+    def run(self):                  ->      def run(self):
+        raise NotImplementedError   ->          ... # Lots of implementation code here!
+"""
+
+# How to make an Interface
 
 
 class ISomething:
@@ -28,7 +49,6 @@ class Something(ISomething):
 
 
 class ClassWithStaticMethod:
-
     def method(self):
         """Just a regular method.."""
         pass

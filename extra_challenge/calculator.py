@@ -44,4 +44,4 @@ class Calculator(ICalculator):
 class AdvancedCalculator(Calculator, IAdvancedCalculator):
     """^ AdvancedCalculator inherits Calculator functionality (can add, sub, mul, and div just like a Calculator)
          AdvancedCalculator implements IAdvancedCalculator Interface (should be made able to pow, sqrt and fact)"""
-    # ToDo Implement ICalculatorHere
+    # ToDo Implement IAdvancedCalculatorHere
